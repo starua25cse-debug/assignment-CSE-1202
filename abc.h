@@ -7,13 +7,19 @@
 // Find maximum of two numbers
 int max(int a, int b)
 {
-    return (a > b) ? a : b;
+    if (a > b)
+        return a;
+    else
+        return b;
 }
 
 // Find minimum of two numbers
 int min(int a, int b)
 {
-    return (a < b) ? a : b;
+    if (a < b)
+        return a;
+    else
+        return b;
 }
 
 // Check whether a number is prime
@@ -118,7 +124,6 @@ long long decimalToOctal(int decimal)
     return octal;
 }
 
-
 // Calculate Factorial
 long long factorial(int n)
 {
@@ -132,7 +137,7 @@ long long factorial(int n)
     return fact;
 }
 
-// Greatest Common Divisor 
+// Greatest Common Divisor
 int gcd(int a, int b)
 {
     while (b != 0)
